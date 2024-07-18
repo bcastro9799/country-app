@@ -1,0 +1,13 @@
+<h2>Países</h2>
+<hr />
+<ul class="list-group">
+  <li
+    *ngFor="let option of options"
+    [routerLink]="option.pathRoute"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    {{ option.name }}
+  </li>
+</ul>
